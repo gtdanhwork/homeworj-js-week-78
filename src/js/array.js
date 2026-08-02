@@ -52,5 +52,18 @@ function findSmallestPositiveNumber() {
 }
 
 document
-	.querySelector('#btnSmallest')
+	.querySelector('#btnSmallestPositive')
 	.addEventListener('click', findSmallestPositiveNumber);
+
+function findLastOddNumber() {
+	let value = -1;
+	for (let index = curArray.length - 1; index >= 0; index--) {
+		if (curArray[index] % 2 == 0) value = curArray[index];
+		document.querySelector('#btnFindLastOddNumberResult').innerHTML = value;
+		return;
+	}
+}
+
+document
+	.querySelector('#btnFindLastOddNumber')
+	.addEventListener('click', findLastOddNumber);
