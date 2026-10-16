@@ -113,8 +113,8 @@ document.querySelector('#btnSortAsc').addEventListener('click', sortAscArray);
 function isPrime() {
 	let value = -1;
 
-	for (let i = 0; i < curArray.length; i++) {
-		let element = curArray[i];
+	for (let index = 0; index < curArray.length; index++) {
+		let element = curArray[index];
 
 		if (element <= 1) continue;
 		if (element == 2) {
@@ -172,4 +172,4 @@ function countSeparateInteger() {
 
 document
 	.getElementById('btnCountSInteger')
-	.addEventListener('click', countInteger);
+	.addEventListener('click', countSeparateInteger);
